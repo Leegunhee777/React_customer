@@ -1,0 +1,115 @@
+.app-Home {
+    width: 100%;
+    height:100%;
+
+    .home-contents {
+        width: 100%;
+        height:100%;
+        .home-brand {
+            position: absolute;
+            top:30%;
+            left:30%;
+            width: 40%;
+            height: 15%;
+            text-align: center;
+            font-size: 100px;
+            background: linear-gradient( to right, #4f4fdc, #8080a5, ghostwhite );
+            .brand-name {
+                top: 12px;
+                /* height: auto; */
+                /* width: 100%; */
+                position: relative;
+            }
+        }
+        .home-input {
+            .form-input {
+                width:50%;
+                left:25%;
+                top:48%;
+                position: absolute;
+            }
+        }
+        .home-box {
+            opacity: 0;
+            position: absolute;
+            width: 80%;
+            left: 10%;
+            top: 16%;
+            height: 68%;
+            text-align: center;
+            .home-box-error {
+                width: 100%;
+                height: 40%;
+                line-height: 200px;
+            }
+        }
+
+        .brand_animation {
+            animation-name:brand_animation;
+            animation-fill-mode: forwards;
+            animation-direction: alternate;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+
+        .input_animation {
+            animation-name: input_animation;
+            animation-fill-mode: forwards;
+            animation-direction: alternate;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+
+        .box_animation {
+            animation-name:box_animation;
+            animation-fill-mode: forwards;
+            animation-direction: alternate;
+            animation-duration: 1s;
+            animation-delay: 1s;
+            animation-iteration-count: 1;
+            animation-timing-function: linear;
+        }
+    }
+}
+
+@keyframes box_animation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes brand_animation {
+    from {
+        top:30%;
+        left:30%;
+        width: 40%;
+        height: 15%;
+        font-size: 100px;
+    }
+    to {
+        top:5%;
+        left:10%;
+        width:20%;
+        height:7.5%;
+        font-size: 50px
+    }
+}
+
+@keyframes input_animation {
+    from {
+        width:50%;
+        left:25%;
+        top:48%;
+    }
+    to {
+        top:6%;
+        left:35%;
+        width:50%;
+    }
+}

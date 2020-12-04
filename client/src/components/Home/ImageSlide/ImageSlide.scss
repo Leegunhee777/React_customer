@@ -1,0 +1,47 @@
+.app-imageSlide {
+    width:100%;
+    height:50%;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow:
+        0 1px 3px 0 rgba(0, 0, 0, 0.2),
+        0 1px 1px 0 rgba(0, 0, 0, 0.14),
+        0 2px 1px -1px rgba(0, 0, 0, 0.12);
+
+    object-fit: cover;
+    overflow: hidden;
+
+    .image_slider-title {
+        height: 20%;
+        line-height:60px;
+        background: black;
+        color: white;
+        opacity: 0.8;
+        font-family: 'Black Han Sans', sans-serif;
+    }
+
+    .search-animation {
+        -webkit-transition: transform 1s linear;
+        transition: transform 1s linear;
+    }
+
+    .search-animation:hover {
+        -webkit-transform:rotate(180deg);
+        transform:rotate(180deg);
+    } 
+
+    .all-animation {
+        animation-name: TEXT_ANIMATION;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    @keyframes TEXT_ANIMATION {  //이놈은 추천이미지 에니메이션 적용된놈, 이놈은 css를 이용하는놈
+        0% {
+            transform: translate3d(0, 0, 0);
+        }
+        100% {
+            transform: translate3d(-100%, 0, 0);
+        }
+    }
+}

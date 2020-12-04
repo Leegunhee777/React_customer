@@ -1,0 +1,65 @@
+.app-popup {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    z-index:10;
+
+    .popup-background {
+        width:100%;
+        height:100%;
+        top:0;
+        left:0;
+        background-color: black;
+        opacity: 0.95;
+    }
+
+    .popup-content {
+        position: fixed;
+        width: 60%;
+        height: 80%;
+        top: 10%;
+        left: 20%;
+        background-color: #cccaca;
+
+        .popup-title {
+            width:100%;
+            height:10%;
+            position: relative;
+            font-family: 'Black Han Sans', sans-serif;
+            font-size: 30px;
+            line-height:70px;
+            background:linear-gradient( to right, #4f4fdc, #8080a5, ghostwhite );
+        }
+        .popup-image-slider {
+            position: relative;
+            height: 80%;
+            width: 45%;
+            left: 4%;
+            top:4%;
+            overflow: hidden;
+            float:left;
+            object-fit: cover;
+
+            .popup-image {
+                transition: 1s transform linear;
+                position: absolute;
+                left:0;
+                width: 100%;
+                height: 100%;
+            }
+
+        }
+        .popup-desc {
+            float:right;
+            width:45%;
+            height:80%;
+            position:relative;
+            overflow:hidden;
+            right:4%;
+            top:4%;
+            word-break: break-all;
+        }
+    }
+}

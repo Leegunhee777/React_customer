@@ -1,0 +1,41 @@
+.app-AuthSignIn {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+
+    .signin-form {
+        width: 100%;
+        max-width: 300px;
+
+        > .form-button {
+            margin-top: 8px;
+            margin-bottom: 4px;
+            padding: 12px;
+            width: 100%;
+
+            [role='progressbar'] {
+                margin-right: 10px;
+            }
+        }
+
+        > .form-input {
+            width: 100%;
+        }
+
+        > .form-ext {
+            margin-top: 2px;
+            text-align: right;
+
+            a {
+                font-size: 14px;
+                font-weight: bold;
+                color: rgba(0, 0, 0, 0.5);
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
